@@ -1,0 +1,231 @@
+
+/* PROFILE HEAD CSS */
+
+1.wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper>.profile_head{
+	display: flex;
+	align-items: center;
+	padding: 38px, 0px, 38px, 0px
+}
+
+.profile_head>.profile-image{
+	flex: .2;
+	margin: 5rem 0 0 5rem;	
+}
+
+.profile_head>.profile-image>.img-profile{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.profile_head>.profile-detail{
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 0 0 0;
+}
+
+.profile_head>.profile-detail>h4{
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 700;
+	
+}
+
+.profile_head>.profile-detail>span{
+	margin: 10px 0 0 10px;
+	width: fit-content;
+	color: gray;
+}
+
+.profile_head>.profile-detail>.icons{
+	margin: 3rem 0 0 0;
+	align-items: center;
+}
+
+.profile_head>.profile-detail>.icons> *{
+	margin: 0 1rem 0 0;
+}
+
+.profile_head>.profile-detail>.icons> :nth-child(1){
+	padding: 10px;
+}
+
+.profile_head>.profile-detail>.icons> :nth-child(2){
+	color: #007bff;
+	font-size: 22px;
+	border: 2px solid #80808054;
+	margin: 0;
+	padding: 10px 12px 10px 12px;
+	border-radius: 50%;
+}
+
+.profile_head>.profile-detail>.icons> :nth-child(3){
+	color: #007bff;
+	font-size: 22px;
+	border: 2px solid #80808054;
+	padding: 10px 12px 10px 12px;
+	border-radius: 50%;
+}
+
+.profile_head>.profile-detail>.icons> :nth-child(4){
+	margin: 0 0 0 2rem;
+}
+
+.profile_head>.profile-detail>.icons> :nth-child(5){
+	background-color: #6c757d59;
+	color: grey;
+	border-color: #6c757d59;
+}
+
+.profile_head>.profile-detail> .time-total{
+	padding: 5px 5px 5px 5px;
+	margin: 10px 5px 5px 5px;
+	width: fit-content;
+	background: orange;
+	color: white;
+	font-weight: 500;
+}
+
+.profile_head>.profile-detail> .time-total > span > i{
+	margin-right: 5px;
+}
+
+/* MIDDLE SECTION CSS */
+
+.acchievement-div{
+	margin-top: 5rem;
+	box-shadow: 0px 0px 16px 2px #80808038;
+	border-radius: 20px;
+	padding: 3rem;
+}
+
+.acchievement-div> .join-button{
+	margin-left: 3rem;	
+	width: fit-content;
+}
+
+.acchievement-div> .join-button > button{
+	width: 18rem;
+	border-radius: 10px;
+}
+
+.acchievement{
+	display: flex;
+}
+
+.acchievement> .a-left{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	margin: 2rem 0 0 2rem;
+}
+
+.acchievement> .a-left> *{
+	margin: 1rem;
+}
+
+.acchievement> .a-right{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 2rem 0 0 0;
+}
+
+.acchievement> .a-right> *{
+	margin: 1rem;
+}
+
+.a-icon{
+	margin: 0 1rem 0 0;
+}
+
+.acchievement span{
+	color: grey;
+}
+
+.a-left h5{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.a-right h5{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.a-left>.rewards> h5 > i{
+	color: grey;
+}
+
+.a-left>.duration> h5 > i{
+	color: orange;
+}
+
+.a-left>.rules> h5 > i{
+	color: orange;
+}
+
+.acchievement ul{
+	list-style: none;
+}
+
+.a-left>.rules> ul > li{
+	color: grey;
+}
+
+.a-right > .challenge-criteria > h5 > i{
+	color: blue;
+}
+
+.a-right > .current-stats > h5 > i{
+	color: green;
+}
+
+.a-right > .current-stats > ul >li{
+	color: grey
+}
+
+.a-right > .notice {
+	border: .5px solid #e9e9e9;
+	background-color: #e1e1e138;
+	border-radius: 10px;
+	padding: 0 50px 0 20px;
+	width: fit-content;0
+}
+
+.a-right > .notice > p{
+	margin: 0;
+	color: grey;
+	font-weight: 700;
+}
+
+.a-right > .notice .starva{
+	color: red;
+}
+
+.rewards span{
+	margin-left: 2rem;
+    border: 1px solid #ffa500;
+    padding: 10px 12rem 10px 10px;
+    background: #ffa50036;
+    font-weight: 700;
+}
+
+.duration span{
+	margin-left: 2rem;
+}
+
+.challenge-criteria span{
+	margin-left: 2.2rem;
+}
