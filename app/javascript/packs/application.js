@@ -23,6 +23,35 @@ function getOrdinalNum(n) {
   return n + (n > 0 ? ['th', 'st', 'nd', 'rd'][(n > 3 && n < 21) || n % 10 > 3 ? 0 : n % 10] : '');
 }
 
+
+function countDownCounter(dt){
+	const date = dt;
+	setInterval(function() {
+	var countDownDate = new Date(date).getTime();
+	var now = new Date().getTime();
+	var timeleft = countDownDate - now;
+	    
+	var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+	document.getElementById("days").innerHTML = days + "d "
+    document.getElementById("hours").innerHTML = hours + "h " 
+    document.getElementById("mins").innerHTML = minutes + "m " 
+    document.getElementById("secs").innerHTML = seconds + "s " 
+
+	if (timeleft < 0) {
+        clearInterval(myfunc);
+        document.getElementById("days").innerHTML = ""
+        document.getElementById("hours").innerHTML = "" 
+        document.getElementById("mins").innerHTML = ""
+        document.getElementById("secs").innerHTML = ""
+        document.getElementById("end").innerHTML = "TIME UP!!";
+    }
+	}, 1000, date);
+}
+
 $(document).ready(function(){
 	$.ajax({
 		url: "https://stage.goals.fit/api/v11/challenges/685",
@@ -39,6 +68,7 @@ $(document).ready(function(){
             let rules_regulation = $('#rules_regulation');
             let current_stats = $('#current_stats');
             let time_duration = $("#time_duration");
+            let counter = countDownCounter(data.last_date)
 
             let messages = data.message.split("\n");
             let stats = data.stats.split("\n");
@@ -59,7 +89,7 @@ $(document).ready(function(){
 
             profile.attr("src", `${data.creator.profile_url}`)
             user_name.text(`${data.name} User September Challange 900km`);
-            user_nm.text(`by ${data.creator.first_name} ${data.creator.last_name}`);
+            user_nm.text(`${data.creator.first_name} ${data.creator.last_name}`);
             challenge_type.text(data.challenge_type.toUpperCase());
             (data.payment_categories != NaN) ? payment_categories.append("<button class='btn-success btn-sm'>PAID</button>") : console.log("No payment_categories")
             challenge_criteria.text(data.criteria)
