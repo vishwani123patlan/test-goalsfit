@@ -135,7 +135,7 @@
 	margin: 2rem 0 0 2rem;
 }
 
-.acchievement> .a-left> *{
+.acchievement> .a-left>	div{
 	margin: 1rem;
 }
 
@@ -146,7 +146,7 @@
 	margin: 2rem 0 0 0;
 }
 
-.acchievement> .a-right> *{
+.acchievement> .a-right> div{
 	margin: 1rem;
 }
 
