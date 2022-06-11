@@ -128,28 +128,6 @@
 	display: flex;
 }
 
-.acchievement> .a-left{
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	margin: 2rem 0 0 2rem;
-}
-
-.acchievement> .a-left>	div{
-	margin: 1rem;
-}
-
-.acchievement> .a-right{
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	margin: 2rem 0 0 0;
-}
-
-.acchievement> .a-right> div{
-	margin: 1rem;
-}
-
 .a-icon{
 	margin: 0 1rem 0 0;
 }
