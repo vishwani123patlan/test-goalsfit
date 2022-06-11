@@ -128,12 +128,6 @@
 	display: flex;
 }
 
-.acchievement> .a-left{
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	margin: 2rem 0 0 2rem;
-}
 
 .acchievement> .a-left>	div{
 	margin: 1rem;
