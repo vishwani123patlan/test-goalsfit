@@ -234,8 +234,111 @@
 	margin-left: 2.2rem;
 }
 
+.leaderboard-div{
+	display: flex;
+	margin: 5rem;
+}
+
+.leaderboard-div .leaderboard{
+	width: 100%;
+}
+
+.leaderboard-div .leaderboard .heading{
+	margin: 1rem 0 0 3rem;
+	width: fit-content
+}
+
+.leaderboard-div .leaderboard .heading h5{
+	font-size: 35px;
+	font-weight: bold;	
+}
+
+.leaderboard-div .leaderboard .mb-images{
+	display: none;
+}
+
+.leaderboard .users-list{
+	width: 100%;
+	background: #8080802e;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.leaderboard .users-list .user-li{
+	display: flex;
+	margin: 20px;
+	align-items: center;
+}
+
+.leaderboard .users-list .user-li .rank-tracker{
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.leaderboard .users-list .user-li .user-detail{
+	display: flex;
+	align-items: center;
+	width: 50%;
+	background: white;
+	margin: 20px;
+	justify-content: space-between;
+	border-radius: 50px;
+}
+
+.leaderboard .users-list .user-li .user{
+	display: flex;
+	align-items: center;
+	margin: .5em .5rem .5rem 1rem;
+}
+
+.leaderboard .users-list .user-li .user h6{
+	margin-left: 1.5em;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.leaderboard .users-list .user-profile{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.rank-arrow-green{
+	color: green;
+}
+
+.rank-arrow-red{
+	color: red;
+}
+
+.distance{
+	display: flex;
+	color: gray;
+	margin: 0 2rem 0 0;
+	flex: .97;
+}
 
 
+.distance h6{
+	font-size: 18px; 
+	font-weight: bold;
+	color: black;
+}
+
+.distance-covered{
+	display: flex;
+	justify-content: end;
+	flex: 1;
+}
+
+.distance i{
+	font-size: 20px;
+	font-weight: bold;
+	float: right;
+	padding-left: 2em;
+}
 
 @media screen and (max-width: 998px) {
   .wrapper>.profile_head{
@@ -298,4 +401,47 @@
    	font-size: 12px;
    }
 
+   .leaderboard-div{
+   		margin: 10px;
+   }
+
+   .leaderboard-div .leaderboard{
+   	width: auto;
+   	margin: 5px;
+   }
+
+   .leaderboard-div .leaderboard .user-li {
+   	width: 100%;
+   	margin: 0px;
+   }
+
+   .leaderboard .users-list .user-li .user-detail{
+   		width: 100%;
+   }
+
+   .leaderboard-div .leaderboard ul{
+      margin: 0;
+      padding: 0;
+    }
+
+    .leaderboard-div .leaderboard .user-li .user img{
+    	width: 60px;
+    	height: 60px;
+    }
+
+    .distance{
+    	flex-direction: column;
+    }
+
+    .distance h6{
+    	font-size: 12px;
+    }
+
+    .distance-covered{
+    	justify-content: start;
+    }
+
+    .distance i{
+    	display: none;
+    }
 }

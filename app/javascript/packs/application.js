@@ -52,6 +52,11 @@ function countDownCounter(dt){
 	}, 1000, date);
 }
 
+
+function truncateString(str, num) {
+  return (str.slice(0, num) + "...");
+}
+
 $(document).ready(function(){
 	$.ajax({
 		url: "https://stage.goals.fit/api/v11/challenges/685",
@@ -68,10 +73,12 @@ $(document).ready(function(){
             let rules_regulation = $('#rules_regulation');
             let current_stats = $('#current_stats');
             let time_duration = $("#time_duration");
-            let counter = countDownCounter(data.last_date)
+            let counter = countDownCounter(data.last_date);
+            var user_list = $("#user-list-leaderboard");
 
             let messages = data.message.split("\n");
             let stats = data.stats.split("\n");
+            var user_challenges = data.user_challenges
 
             let start_date = new Date(data.start_date);
             let end_date = new Date(data.end_date);
@@ -87,6 +94,7 @@ $(document).ready(function(){
 
             let duration = `${month1} ${day1}, ${year1} to ${month2} ${day2}, ${year2}`
 
+            // assign values in html
             profile.attr("src", `${data.creator.profile_url}`)
             user_name.text(`${data.name} User September Challange 900km`);
             user_nm.text(`${data.creator.first_name} ${data.creator.last_name}`);
@@ -94,6 +102,7 @@ $(document).ready(function(){
             (data.payment_categories != NaN) ? payment_categories.append("<button class='btn-success btn-sm'>PAID</button>") : console.log("No payment_categories")
             challenge_criteria.text(data.criteria)
             time_duration.text(duration)
+
             
             console.log("MESS", messages)
 
@@ -103,6 +112,29 @@ $(document).ready(function(){
 
             stats.forEach(element => (
             	current_stats.append(`<li>${element}</li>`)
+            ))
+
+            user_challenges.forEach(element => (
+            	user_list.append(
+            		`
+            		<li class="user-li">
+    							<span class="rank-tracker">
+    								<span class="rank-arrow-green" style="display: ${(element.rank_change=="0") ? "none" : "block"}"><i class="fa-solid fa-sort-up"></i></span>
+    								<span class="user-rank">${element.rank}</span>
+    								<span class="rank-arrow-red" style="display: ${(element.rank_change=="0") ? "block" : "none"}"><i class="fa-solid fa-sort-down"></i></span>
+    							</span>
+    							<span class="user-detail">
+    								<div class="user">
+    									<img src="${(element.user.profile_url != "") ? element.user.profile_url : "https://www.pexels.com/photo/man-smiling-behind-wall-220453/"}" class="user-profile" id="user-li-profile">
+    								</div>
+    								<div class="distance">
+                      <h6 >${truncateString(`${element.user.first_name} ${element.user.last_name}`, 40)}</h6>
+                      <span class="distance-covered">${element.stat}</span> <i class="mb-icon-hide fa-solid fa-angle-right"></i>
+                    </div>
+    							</span>
+    						</li>
+            		`
+            	)
             ))
 
     	}
