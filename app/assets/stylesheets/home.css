@@ -1,0 +1,121 @@
+
+/* PROFILE HEAD CSS */
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.wrapper .profile_head{
+	display: flex;
+	align-items: center;
+	padding: 38px, 0px, 38px, 0px
+}
+
+
+@media screen and (max-width: 998px) {
+  .wrapper>.profile_head{
+  	flex-direction: column;
+  }
+
+  .profile_head .profile-image .img-profile{
+ 		width: 80px;
+ 		height: 80px;
+ 		margin: 1em 0 0 1.2em;
+  }
+
+  .profile_head>.profile-detail>h4{
+  	margin: 0 0 0 1rem;
+  }
+
+  .profile_head>.profile-detail>.icons{
+  	margin: 10px 0 0 10px;
+  }
+
+  .profile_head>.profile-detail>.icons> :nth-child(1),
+  .profile_head>.profile-detail>.icons> :nth-child(2),
+  .profile_head>.profile-detail>.icons> :nth-child(3)
+
+  {
+  		font-size: 12px;
+  }
+
+  .profile_head>.profile-detail>.icons> :nth-child(4),
+   .profile_head>.profile-detail>.icons> :nth-child(5)
+  {
+  	font-size: 10px;
+  	margin: 0 0 0 10px;
+  }
+
+  .profile_head>.profile-detail> .time-total{
+  	margin: 5px 0 0 10px;
+  }
+
+
+  .acchievement{
+  	flex-direction: column;
+  }
+
+  .acchievement-div{
+  	margin-top: 20px;
+  	padding: 0;
+  }
+
+  .acchievement> .a-left, .acchievement> .a-right{
+  	margin: 0 0 0 20px;
+  }
+
+  .acchievement> .a-left h5, .acchievement> .a-right h5{
+  		font-size: 15px;
+   }
+
+   .rewards span, .duration span, .rules li, .challenge-criteria span, .current-stats li{
+   	margin: 10 0 0 10px;
+   	font-size: 12px;
+   }
+
+   .leaderboard-div{
+   		margin: 10px;
+   }
+
+   .leaderboard-div .leaderboard{
+   	width: auto;
+   	margin: 5px;
+   }
+
+   .leaderboard-div .leaderboard .user-li {
+   	width: 100%;
+   	margin: 0px;
+   }
+
+   .leaderboard .users-list .user-li .user-detail{
+   		width: 100%;
+   }
+
+   .leaderboard-div .leaderboard ul{
+      margin: 0;
+      padding: 0;
+    }
+
+    .leaderboard-div .leaderboard .user-li .user img{
+    	width: 60px;
+    	height: 60px;
+    }
+
+    .distance{
+    	flex-direction: column;
+    }
+
+    .distance h6{
+    	font-size: 12px;
+    }
+
+    .distance-covered{
+    	justify-content: start;
+    }
+
+    .distance i{
+    	display: none;
+    }
+}

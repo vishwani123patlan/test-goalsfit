@@ -1,0 +1,28 @@
+.acchievement-div{
+	margin-top: 5rem;
+	box-shadow: 0px 0px 26px 0px #7685A033;
+	border-radius: 20px;
+	padding: 3rem;
+}
+
+
+.acchievement{
+	display: flex;
+}
+
+.acchievement> .a-left{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	margin: 2rem 0 0 2rem;
+	border: 1px solid green;
+}
+
+.acchievement .rewards .a-icon{
+	height: 16.233346939086914px;
+	width: 15.01398754119873px;
+	left: 2.49664306640625px;
+	top: 1.875px;
+	border-radius: 0px;
+
+}

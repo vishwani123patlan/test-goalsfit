@@ -36,18 +36,14 @@ function countDownCounter(dt){
 	var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
 	var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
 
-	document.getElementById("days").innerHTML = days + "d "
-    document.getElementById("hours").innerHTML = hours + "h " 
-    document.getElementById("mins").innerHTML = minutes + "m " 
-    document.getElementById("secs").innerHTML = seconds + "s " 
+    document.getElementById("hours").innerHTML = (hours + (days*24)) + ":" 
+    document.getElementById("mins").innerHTML = minutes + ":" 
+    document.getElementById("secs").innerHTML = seconds + "hrs" 
 
 	if (timeleft < 0) {
-        clearInterval(myfunc);
-        document.getElementById("days").innerHTML = ""
         document.getElementById("hours").innerHTML = "" 
         document.getElementById("mins").innerHTML = ""
         document.getElementById("secs").innerHTML = ""
-        document.getElementById("end").innerHTML = "TIME UP!!";
     }
 	}, 1000, date);
 }
@@ -103,8 +99,6 @@ $(document).ready(function(){
             challenge_criteria.text(data.criteria)
             time_duration.text(duration)
 
-            
-            console.log("MESS", messages)
 
             messages.forEach(element => (
             	rules_regulation.append(`<li>${element}</li>`)

@@ -1,0 +1,127 @@
+.wrapper .profile_head{
+	display: flex;
+	align-items: center;
+	padding: 38px, 0px, 38px, 0px
+}
+
+.wrapper .profile_head .profile-name {
+	height: 30px;
+	width: 1089px;
+	margin-left: 180px;
+	margin-top: 20px;
+	font-family: Source Sans Pro;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 0px;
+	text-align: left;
+
+}
+
+.wrapper .profile_head .profile .small-name{
+	height: 25px;
+	width: 245px;
+	margin-left: 14px;
+	top: 0px;
+	font-family: Source Sans Pro;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.wrapper .profile_head .img-profile{
+	height: 95px;
+	width: 95px;
+	margin-left: 74px;
+	top: 0px;
+	border-radius: 50%;
+}
+
+.wrapper .profile_head .icons .sm-join-chn{
+	height: 36px;
+	width: 120px;
+	margin-left: 180px;
+	top: 125px;
+	border-radius: 8px;
+	font-family: Source Sans Pro;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 16px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.wrapper .profile_head .icons .icon-share{
+	height: 36px;
+	width: 36px;
+	padding: 5px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 1px solid #E4EDF4;
+	color: #206AEE;
+	margin-left: 10px;
+}
+
+.wrapper .profile_head .icons .icon-email{
+	height: 36px;
+	width: 36px;
+	padding: 5px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 1px solid #E4EDF4;
+	color: #206AEE;
+	margin-left: 10px;
+
+}
+
+.wrapper .profile_head .icons .payment-cat button{
+	border-radius: 2px;
+	padding: 2px, 4px, 2px, 4px;
+	background: #11B494;
+	font-family: Source Sans Pro;
+	font-size: 10px;
+	font-weight: 600;
+	line-height: 12px;
+	letter-spacing: 0px;
+	text-align: left;
+	border: none;
+	margin-left: 20px;
+;
+
+
+}
+
+.wrapper .profile_head .icons .chln-type{
+	border-radius: 0px;
+	left: 4px;
+	top: 2px;
+	padding: 0px 3px 0 3px;
+	border-radius: 2px;
+	background: #C9DCFD;
+	border: none;
+	color: black;
+
+}
+
+.wrapper .profile_head .time-total{
+	height: 24px;
+	width: fit-content;
+	margin-left: 192px;
+	margin-top: 10px;
+	border-radius: 2px;
+	background: #FDAA29;
+	align-items: center;
+}
+
+.wrapper .profile_head .time-total .counter{
+	font-family: Source Sans Pro;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 12px;
+	letter-spacing: 0px;
+	text-align: center;
+	color: white;
+	padding: 2px;
+}

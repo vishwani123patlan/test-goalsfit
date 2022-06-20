@@ -37,7 +37,7 @@ development:
   <<: *default
   adapter: postgresql
   database: test_dev
-  username: vishu123
+  username: postgres
   password: password
   host: localhost
   port: 5432
@@ -47,7 +47,7 @@ test:
   <<: *default
   adapter: postgresql
   database: test_dev_test
-  username: vishu123
+  username: postgres
   password: password
   host: localhost
   port: 5432

@@ -1,20 +1,19 @@
 <div class="profile-detail">
-	<h4 id="user-name">This is my name for test.</h4>
-	<div class="profile-image">
+	<h4 id="user-name" class="profile-name">This is my name for test.</h4>
+	<div class="profile">
 		<image id="profile-image-url" class="img-profile" src="<%= asset_path('profile.jpg')%>">
-		<span><span class="nb-hidden">by </span><span id="user_name">Kutti MuttiKumar</span></span>
+		<span class="small-name"><span class="nb-hidden">by </span><span id="user_name">Kutti MuttiKumar</span></span>
 	</div>
 	
 	<div class="icons">
-		<button class="btn btn-primary">Join Challange</button>
-		<span><i class="fa-solid fa-share-nodes"></i></span>
-		<span><i class="fa-solid fa-envelope"></i></span>
-		<span id="payment_categories"></span>
-		<button class="btn-sm btn-secondary" id="challenge_type">PUBLIC</button>
+		<button class="btn btn-primary sm-join-chn">Join Challange</button>
+		<span class="icon-share"><i class="fa-solid fa-share-nodes"></i></span>
+		<span class="icon-email"><i class="fa-solid fa-envelope"></i></span>
+		<span id="payment_categories" class="payment-cat"></span>
+		<button class="btn-sm btn-secondary chln-type" id="challenge_type">PUBLIC</button>
 	</div>
 	<div class="time-total">
-		<span><i class="fa-regular fa-clock"></i>
-			<span id="days"></span>
+		<span class="counter"><i class="fa-regular fa-clock"></i>
 		    <span id="hours"></span>
 		    <span id="mins"></span>
 		    <span id="secs"></span>
